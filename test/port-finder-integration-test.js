@@ -1,5 +1,5 @@
 /*
- * port-finder-0-vs-127-test.js: Test for the `portfinder` module.
+ * port-finder-integration-test.js: Test for the `portfinder` module.
  * that demonstrates issue #24 
  * https://github.com/indexzero/node-portfinder/issues/24
  */
@@ -11,7 +11,7 @@ var vows = require('vows'),
     path = require('path'),
     http = require('http');
 
-const host = "localhost";
+var host = "localhost";
 var server;
 
 vows.describe('portfinder').addBatch({
